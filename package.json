@@ -1,0 +1,11 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "![JavaScript](https://user-images.githubusercontent.com/102270909/223410973-ae2f76ae-4e08-4cee-8094-b831971a481b.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
