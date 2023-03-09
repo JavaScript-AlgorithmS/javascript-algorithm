@@ -1,4 +1,4 @@
-import { checkAnswer } from "../common.js";
+import { checkAnswer } from "../../common.js";
 
 /**
  * © DEV MING 💻
