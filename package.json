@@ -1,6 +1,7 @@
 {
   "name": "javascript",
   "version": "1.0.0",
+  "type": "module",
   "description": "![JavaScript](https://user-images.githubusercontent.com/102270909/223410973-ae2f76ae-4e08-4cee-8094-b831971a481b.jpg)",
   "main": "index.js",
   "scripts": {
