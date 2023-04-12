@@ -11,7 +11,7 @@ import { checkAnswer } from "../../common.js";
 삼각형의 세 변의 길이가 담긴 배열 sides이 매개변수로 주어집니다. 세 변으로 삼각형을 만들 수 있다면 1, 만들 수 없다면 2를 return하도록 solution 함수를 완성해주세요. **/
 
 function solution(sides) {
-  let array = sides.sort((a, b) => b - a);
+  const array = sides.sort((a, b) => b - a);
   if (array[0] < array[1] + array[2]) {
     return 1;
   } else {
@@ -23,7 +23,7 @@ function main() {
   const sides = [1, 2, 3];
   const result = 2;
 
-  checkAnswer(JSON.stringify(solution(sides)) === JSON.stringify(result));
+  checkAnswer(solution(sides)) === result;
 }
 
 main();
