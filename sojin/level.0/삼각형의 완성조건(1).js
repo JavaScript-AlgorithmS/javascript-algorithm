@@ -23,7 +23,7 @@ function main() {
   const sides = [1, 2, 3];
   const result = 2;
 
-  checkAnswer(solution(sides)) === result;
+  checkAnswer(solution(sides) === result);
 }
 
 main();

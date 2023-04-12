@@ -17,7 +17,7 @@ function main() {
   const numbers = [1, 2, 3, 4, 5];
   const result = 20;
 
-  checkAnswer(solution(numbers)) === result;
+  checkAnswer(solution(numbers) === result);
 }
 
 main();
