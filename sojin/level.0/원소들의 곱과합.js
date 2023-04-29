@@ -12,18 +12,14 @@ function solution(num_list) {
   let sum = 0;
   let multi = 1;
 
-  for (let i = 0; i < num_list.length; i++) {
-    sum += num_list[i];
-    multi *= num_list[i];
+  for (const num of num_list) {
+    sum += num;
+    multi *= num;
   }
 
   const sumSquare = sum ** 2;
 
-  if (sumSquare < multi) {
-    return 0;
-  } else {
-    return 1;
-  }
+  return sumSquare < multi ? 0 : 1;
 }
 
 function main() {
