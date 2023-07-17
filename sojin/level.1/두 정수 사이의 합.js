@@ -13,15 +13,11 @@ import { checkAnswer } from "../../common.js";
 
 function solution(a, b) {
   let answer = 0;
+  let min = Math.min(a, b);
+  let max = Math.max(a, b);
 
-  if (a >= b) {
-    for (let i = b; i <= a; i++) {
-      answer += i;
-    }
-  } else {
-    for (let j = a; j <= b; j++) {
-      answer += j;
-    }
+  for (let i = min; i <= max; i++) {
+    answer += i;
   }
   return answer;
 }
