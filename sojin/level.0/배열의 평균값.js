@@ -11,12 +11,18 @@ import { checkAnswer } from "../../common.js";
 function solution(numbers) {
   let sum = 0;
 
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+  for (let num of numbers) {
+    sum += num;
   }
 
   return sum / numbers.length;
 }
+
+/**
+ * function solution(numbers) {
+ * return numbers.reduce((a,b)=> a+b, 0) / numbers.length;
+ * }
+ */
 
 function main() {
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
