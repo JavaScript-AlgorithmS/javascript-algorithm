@@ -15,9 +15,14 @@ function solution(dot) {
     return 2;
   } else if (dot[0] < 0 && dot[1] < 0) {
     return 3;
-  } else 
-  return 4;
+  } else return 4;
 }
+
+/** 삼항연산자를 이용한 풀이
+ * function solution(dot) {
+ * return dot[0] > 0 ? dot[1] > 0 ? 1 : 4 : dot[1] > 0 ? 2: 3;
+ * }
+ */
 
 /* 구조분해할당을 이용한 풀이
 function solution(dot) {

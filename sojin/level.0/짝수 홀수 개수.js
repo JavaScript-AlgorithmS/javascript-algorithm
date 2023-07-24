@@ -11,8 +11,8 @@ import { checkAnswer } from "../../common.js";
 function solution(num_list) {
   let a = 0,
     b = 0;
-  for (let i = 0; i < num_list.length; i++) {
-    if (num_list[i] % 2 == 0) {
+  for (let num of num_list) {
+    if (num % 2 == 0) {
       a++;
     } else {
       b++;
@@ -20,6 +20,18 @@ function solution(num_list) {
   }
   return [a, b];
 }
+
+/**
+ * function solution(num_list) {
+    const answer = [0,0];
+
+    for(let num of num_list){
+        answer[num % 2] += 1
+    }
+
+    return answer;
+}
+ */
 
 /* function solution(num_list) {
   const evenLength = num_list.filter(n => n % 2 === 0).length;
