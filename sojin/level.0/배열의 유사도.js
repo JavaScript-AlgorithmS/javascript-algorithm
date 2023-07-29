@@ -18,6 +18,13 @@ function solution(s1, s2) {
   return answer;
 }
 
+/**
+ * function solution(s1, s2) {
+ * const answer = s1.filter((x) => s2.includes(x));
+ * return answer.length;
+ * }
+ */
+
 function main() {
   const s1 = ["a", "b", "c"];
   const s2 = ["com", "b", "d", "p", "c"];

@@ -11,17 +11,18 @@ import { checkAnswer } from "../../common.js";
 function solution(array, n) {
   let answer = 0;
   for (let i = 0; i < array.length; i++) {
-    if (array[i] == n) {
+    if (array[i] === n) {
       answer++;
     }
   }
   return answer;
 }
 
-/* function solution(array, n) {
-    return array.filter(v=>v===n).length;} 
-    
-    filter 함수를 사용하여 더 간결하게 작성가능*/
+/* filter 함수를 사용하여 더 간결하게 작성가능
+  function solution(array, n) {
+    return array.filter(v=>v===n).length;
+  } 
+    */
 
 function main() {
   const array = [1, 1, 2, 3, 4, 5];
