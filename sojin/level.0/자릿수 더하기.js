@@ -10,14 +10,20 @@ import { checkAnswer } from "../../common.js";
 
 function solution(n) {
   let sum = 0;
-  let m = String(n);
+  const m = String(n);
 
-  for (let i = 0; i < m.length; i++) {
-    sum += Number(m[i]);
+  for (let i of m) {
+    sum += Number(i);
   }
 
   return sum;
 }
+
+/**
+ * function solution(n) {
+ * return String(n).split("").reduce((acc, cur) => acc + Number(cur), 0 );
+ * }
+ */
 
 function main() {
   const n = 1234;

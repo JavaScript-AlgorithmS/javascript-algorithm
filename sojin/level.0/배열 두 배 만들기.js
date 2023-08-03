@@ -10,12 +10,23 @@ import { checkAnswer } from "../../common.js";
 
 function solution(numbers) {
   const answer = [];
-  for (let i = 0; i < numbers.length; i++) {
-    answer.push(numbers[i] * 2);
+  for (let num of numbers) {
+    answer.push(num * 2);
   }
-
   return answer;
 }
+
+/** map을 사용한 풀이
+ * function solution(numbers) {
+ * return numbers.map((v) => v * 2)
+ * }
+ */
+
+/** reduce를 사용한 풀이
+ * function solution(numbers) {
+return numbers.reduce((a, b) => [...a, b * 2], []);
+}
+ */
 
 function main() {
   const numbers = [1, 2, 3, 4, 5];
