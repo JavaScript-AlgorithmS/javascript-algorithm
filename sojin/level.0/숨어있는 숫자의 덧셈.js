@@ -10,18 +10,23 @@ import { checkAnswer } from "../../common.js";
 
 function solution(my_string) {
   let sum = 0;
-  const num = my_string.match(/[0-9]/g);
+  const num = my_string.match(/[0-9]/g); // /\d/g 와 /[0-9]/g은 기능상 동일하게 적용된다.
   if (num !== null) {
-    for (let i = 0; i < num.length; i++) {
-      sum += Number(num[i]);
+    // match 함수가 주어진 문자열에서 정규 표현식에 해당하는 문자를 발견하지 못했을 때 null을 반환하기 때문에 오류방지를 위한 필수적인 부분!
+    for (let i of num) {
+      sum += Number(i);
     }
     return sum;
   }
 }
 
-/**
- * 한자리 숫자를 추출할 때는 /\d/g 대신 /[0-9]/g 정규표현식 사용해야한다.
- * 숫자가 없는 경우'null'을 반환하기 때문에 오류방지를 위해 if문으로 확인해준다.
+/** 대괄호 [] 안에서 ^ 기호는 부정(negation)을 의미
+ * function solution(my_string) {
+    const answer = my_string.replace(/[^0-9]/g, '')
+                            .split('')
+                            .reduce((acc, curr) => acc + Number(curr), 0);
+    return answer;
+}
  */
 
 function main() {

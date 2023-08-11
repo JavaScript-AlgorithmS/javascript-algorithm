@@ -16,6 +16,17 @@ function solution(n) {
   return answer;
 }
 
+/**
+ * function solution(n) {
+    const answer = [];
+
+    for (let i = 0; i<=n; i+=2) {
+      answer.push(i)
+    }
+    return answer;
+}
+ */
+
 function main() {
   const n = 10;
   const result = [1, 3, 5, 7, 9];

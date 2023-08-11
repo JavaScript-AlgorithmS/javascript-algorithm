@@ -10,13 +10,24 @@ import { checkAnswer } from "../../common.js";
 
 function solution(numbers, n) {
   let sum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+  for (let num of numbers) {
+    sum += num;
     if (sum > n) {
       return sum;
     }
   }
 }
+
+/** while문을 활용한 풀이
+ * function solution(numbers, n) {
+    let answer = 0;
+    let i = 0;
+    while(answer <= n) {
+        answer += numbers[i++]
+    }
+    return answer;
+}
+ */
 
 function main() {
   const numbers = [58, 44, 27, 10, 100];
