@@ -13,7 +13,7 @@ function solution(num_list) {
   let oddSum = 0;
   for (const num of num_list) {
     if (num % 2 === 0) {
-      evenSum += num.toString();
+      evenSum += num.toString(); // 이어붙인 수를 만들기 위해 문자열로 변환
     } else {
       oddSum += num.toString();
     }

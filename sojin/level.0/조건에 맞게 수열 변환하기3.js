@@ -24,6 +24,10 @@ function solution(arr, k) {
   return answer;
 }
 
+/**
+ * const solution = (arr, k) => arr.map(v => k % 2 ? v * k : v + k)
+ */
+
 function main() {
   const arr = [1, 2, 3, 100, 99, 98];
   const k = 3;

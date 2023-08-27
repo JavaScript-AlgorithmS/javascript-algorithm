@@ -12,8 +12,8 @@ import { checkAnswer } from "../../common.js";
 function solution(num_str) {
   let answer = 0;
 
-  for (let i = 0; i < num_str.length; i++) {
-    answer += Number(num_str[i]);
+  for (let num of num_str) {
+    answer += Number(num);
   }
   return answer;
 }
