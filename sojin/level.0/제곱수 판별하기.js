@@ -10,20 +10,12 @@ import { checkAnswer } from "../../common.js";
 
 function solution(n) {
   const sqrt = Math.floor(Math.sqrt(n));
-  if (n % sqrt === 0) {
-    return 1;
-  } else {
-    return 2;
-  }
+  return n % sqrt === 0 ? 1 : 2;
 }
 
-/**
+/** Number.isInteger()은 값이 정수인지 판별하는 메서드
  * function solution(n) {
-    if(Math.sqrt(n) % 1 === 0){
-        return 1;
-    }
-    
-    return 2;
+  return Number.isInteger(Math.sqrt(n)) ? 1 :2;
 }
  */
 
