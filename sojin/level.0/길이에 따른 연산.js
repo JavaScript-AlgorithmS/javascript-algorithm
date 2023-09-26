@@ -25,7 +25,17 @@ function solution(num_list) {
   }
 }
 
-/* map, 화살표 함수를 이용한 풀이도 적용해볼것 */
+/**
+ * function solution(num_list) {
+ let result;
+  if (num_list.length >= 11) {
+    result = num_list.reduce((sum, num) => sum + num);
+  } else {
+    result = num_list.reduce((multi, num) => multi * num);
+  }
+  return result;
+}
+ */
 
 function main() {
   const num_list = [3, 4, 5, 2, 5, 4, 6, 7, 3, 7, 2, 2, 1];
