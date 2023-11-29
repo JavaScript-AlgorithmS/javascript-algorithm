@@ -13,22 +13,7 @@ function solution(myString) {
   return myString.replace(/[a-k]/g, "l"); // a부터 k사이의 알파벳을 l로 교체해주는 정규표현식 사용
 }
 
-/**
- * for문 사용한 풀이
-function solution(myString) {
-  let replaceString = '';
-  for (let i = 0; i < myString.length; i++) {
-    if (myString[i] < 'l') {
-      replaceString += 'l';
-    } else {
-      replaceString += myString[i];
-    }
-  }
-  return replaceString;
-}
- */
-
-/**메서드 활용 풀이
+/** 알파벳끼리도 크기 비교가 가능하다
  * function solution(myString) {
   return myString.split('').map(v => v < 'l' ? 'l' : v).join('');
 }
