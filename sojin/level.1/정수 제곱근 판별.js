@@ -12,10 +12,9 @@ n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 양�
 function solution(n) {
   let x = Math.sqrt(n);
   if (Number.isInteger(x)) {
-    return Math.pow(x + 1, 2);
-  } else {
-    return -1;
+    return Math.pow(x + 1, 2)
   }
+  return -1
 }
 
 function main() {
